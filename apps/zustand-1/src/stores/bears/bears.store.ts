@@ -6,6 +6,8 @@ interface BearState {
   pandaBears: number
 
   increasePolarBears: (by: number) => void
+  increaseBlackBears: (by: number) => void
+  increasePandaBears: (by: number) => void
 }
 
 export const useBearStore = create<BearState>((set) => ({
@@ -14,4 +16,6 @@ export const useBearStore = create<BearState>((set) => ({
   pandaBears: 0,
 
   increasePolarBears: (by) => set((state) => ({ polarBears: state.polarBears + by })),
+  increaseBlackBears: (by) => set((state) => ({ blackBears: state.blackBears + by })),
+  increasePandaBears: (by) => set((state) => ({ pandaBears: state.pandaBears + by })),
 }))
