@@ -1,0 +1,21 @@
+{
+  "name": "learning-frontend-zustand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo run dev",
+    "monorepo_1:dev": "turbo run dev --filter monorepo_1"
+  },
+  "keywords": [],
+  "packageManager": "pnpm@9.3.0",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.0.3"
+  },
+  "dependencies": {
+    "zustand": "^4.5.2"
+  }
+}
